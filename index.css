@@ -1,0 +1,54 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    width: 750px;
+    text-align: center;
+}
+
+.container {
+    border: 2px solid #030303;
+    width: 750px;
+    height: 560px;
+}
+.top-bar {
+    border: 2px solid teal;
+    padding: 12px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around ;
+}
+
+.hex-code {
+    border: 2px solid teal;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.color-bars {
+    border: 2px solid teal;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+}
+#color-one{
+    width: 20%;
+    border: 1px solid red;
+
+}
+#color-two{
+    width: 20%;
+    border: 1px solid pink;
+}
+#color-three{
+    width: 20%;
+    border: 1px solid orange;
+}
+#color-four{
+    width: 20%;
+    border: 1px solid purple;
+}
+#color-five{
+    width: 20%;
+    border: 1px solid dodgerblue;
+}
