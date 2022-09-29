@@ -31,6 +31,13 @@ html, body {
     display: flex;
     flex-direction: row;
 }
+.output {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 750px;
+}
+/* Colors are temporary */
 #color-one{
     width: 20%;
     border: 1px solid red;

@@ -21,16 +21,18 @@ console.log("button clicked")
  fetch("https://www.thecolorapi.com/scheme?hex=FF0&mode=monochrome&count=5")
  .then( response => response.json())
  .then( data => {
-   //  const colorArray = data.slice(0, 4);
-   //   for (let post of colorArray) {
-   //       output.innerHTML = `
-   //           <div id="color-one">${post.data[0]}</div>
-   //           <div id="color-two">${post[1]}</div>
-   //           <div id="color-three">${post[2]}</div>
-   //           <div id="color-four">${post[3]}</div>
-   //           <div id="color-five">${post[4]}</div>
-   //       `
-   //   }
+    const colorArray = data
+    const testArray = colorArray.toString().slice(0,4)
+    
+     for (let post of testArray) {
+         output.innerHTML = `
+             <div id="color-one">${post[0]}</div>
+             <div id="color-two">${post[1]}</div>
+             <div id="color-three">${post[2]}</div>
+             <div id="color-four">${post[3]}</div>
+             <div id="color-five">${post[4]}</div>
+         `
+     }
  console.log(data)
  })
 
